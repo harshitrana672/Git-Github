@@ -1,0 +1,99 @@
+As a developer its hard to maintain your project code 
+different versions 
+history about code changes 
+project source code backup 
+sync code changes with team mates 
+
+Why we need Git ?
+
+1. Hard disk failure or crashes 
+2. Hard for multiple people to work together on projects 
+3. difficult to track changes (versions ) 
+4. Storing projects on online repository 
+  easy to share 
+  easy to access   easy to track 
+
+Git is open source distributed version control system 
+Online Repository (common source control platform )
+Github Bitbucket Gitlab 
+
+Version Control system 
+1. Local version control system
+local computer for one version one folder 
+2. Centralized version control system
+One copy is presen to the central VCS server rest of the member have a copy localy 
+3. Distributed  version control system 
+
+
+git --version     to check if git is installed on system 
+
+go to the folder in cmd and then type code .  as command 
+
+configuration for email and name 
+enail   :-  git config --global user.email "harshit.rana@gmail.com 
+
+for username  :- git config --global usen.name  "Harshit Rana"
+
+for viewing the settings use :-  git config --list
+
+
+Repository is basically a container online to store our code file and code 
+
+Working directory after completing all things from this part we move to staging area which is hold history and give us a chance to 
+review and see all changes we did etc. in an organize way after that we do commit to store the changes we made in a local repository 
+git commit means we are trying to save all the information that we did 
+
+all the history of staging area will move to local repository 
+to check the history info we use git log command ***********
+
+commmand I used for this series from starting 
+git --version
+d:
+cd splitmate 
+code .
+git config --global user.email "harshitrana672@gmail.com
+git config --global user.name "Harshit Rana"
+git config --list
+git init 
+git status
+git add .
+git commit -m "Added Index page"
+
+Now go to setting of your github account and go to developer setting then Personal Access tokens chose one 
+fine grained tokens 
+tokens(classic )
+
+This is comes into picture when: on our local system we configured our gmail and name globally but how to confirm I am the owner so we need to
+generate this token so we can take this as a password 
+to connect our local repository to online repository 
+
+git remote add origin https://github.com/harshitrana672/splitmate.git
+this is for connecting our local repository to the online repository and origin is the name for this link so we can use it later when needed 
+
+
+Now we need to define on which branch we need to push our change by default we have master branch and we are going to rename it to main 
+Then we create we multiple new branch is 
+What a branch is?
+when we are working on multiple features and multiple development project what we do is we have a main branch which hold main code when 
+
+we creating a new feature we create a new branch and then merge it with main branch 
+
+to select our main branch we use git branch -M main 
+to know which branch we are currently working on use git branch command 
+
+to push the changes to the main branch we use this commandf d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
