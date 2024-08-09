@@ -1,0 +1,27 @@
+to add one particular file to staging area add and then name of the file 
+After doing multiple commit we have a lot of logs which can be seen just by clicking down to exit that END line \
+just press q to EXIT 
+
+this command git log --oneline 
+it is used to display all the commit without full description just by their commit name and id 
+
+Working directory -> staging area(INDEX) --> Local repository(HEAD) -> remote repository 
+
+Working directory { untracked ,  unmodified  , modified }  
+1. doesn't included in the staging area 
+2. added in the staging area but doesn't have any changes 
+3. added in SA but have changes 
+
+Commit Timeline 
+the initial commit we made to local repository is the parent commit 
+
+
+
+
+
+
+
+
+
+
+
