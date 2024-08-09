@@ -80,9 +80,18 @@ we creating a new feature we create a new branch and then merge it with main bra
 
 to select our main branch we use git branch -M main 
 to know which branch we are currently working on use git branch command 
+git branch
 
-to push the changes to the main branch we use this commandf d
+to push the changes to the main branch we use this command
+git push -u origin main 
+Here orgin is the repository link on which we are going to push our changes online and main 
+branch on which we are pushing these changes 
 
+
+In git Log we have two things one is origin and other is HEAD 
+origin/main means my online repository holds only these changes 
+where as head denotes whatever the changes we did and our online repository don't have 
+Head refer to active or current position 
 
 
 
