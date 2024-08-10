@@ -14,11 +14,50 @@ Working directory { untracked ,  unmodified  , modified }
 
 Commit Timeline 
 the initial commit we made to local repository is the parent commit 
+1--> 2--> -->3  after initial commit then next commit contain change that we have made and info
+of the previous commit 
+
+HEAD basically tells you where you are in your project currently and if we have multiple branch
+it is easier to track where we are working right now 
+
+Git diff or (git diff)  this command is used to know the last change you have done after your previous commit 
+this not only tells you what you have done in the last change but you can compare multiple commit with commit id and get the result ex. 
+git diff fe2950c e6ea067
+this will tell you the diff or what change you have done after the fe2950c commit 
+
+if you can do this with the first and last commit it will provide all the result or change happened in between 
 
 
+stash means to save something for temporary purpose 
+so git stash basically is a command to save your changes temporily and you can continue on work 
+for the last commit you have done after completing your work you can bring them back using 
+git stash pop 
+ so these two command are very useful 
+git stash pop brings all the temporary changes back to your file 
 
+after making some temporary changes if you put them in stash it will reflect in git stash list with their id attached to them if you didn't provide them a name 
+but if you don't want those changes anymore or any of the changes from the git stash list 
+then use this command
+git stash clear 
 
+now you are saving too many temporary changes but this time with a name then you can do is 
+use this command
+git stash save "NAme of your choice"
 
+Now to apply any of the temporary change again we can use 
+git stash apply 1  (this 1 represent the number corresponding to the change you want to apply
+
+Now supppose I did some modification in my index file and then save them but I don't want them 
+so its like a undo thing for me to reach the last commit I did and this command is specific to the file so 
+using 
+git restore index.html 
+it will take to me the last commit scenario of index file 
+if i don't mention a commit it will go to the most recent one 
+Now suppose you push the change to the staging area now to bring those back to the working directory i can do 
+git restore --staged index.html 
+
+so basically you can bring back file from the stagging area to working directory then from 
+working directory to the previous comit 
 
 
 
