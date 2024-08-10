@@ -1,0 +1,32 @@
+why we need multiple branch 
+so in order to work on different feature of same project which took time and we need to commit daily , we can't do that regularly on main branch 
+so we create another branch and do separte testing for that features and when things got done we merge it back to main branch 
+so now how to create a branch use this command 
+
+git branch name-of-the-branch
+to check how much branch you have  git branch , for switching to other branch apart from main use this command 
+git checkout name-of-the-branch
+
+Now every commit you make will commit to this branch
+git push origin feature-button
+now to switch back to main branch use 
+git checkout main
+now to merge the feature back to main branch you need first get to that branch here is our main 
+now use this command
+git merge feature-button 
+now after mergin the branch you need to push those change to the main branch also so do the psuh to main branch 
+
+Now the feature is complete and i don't want that branch anymore so I can delete it to do that we use 
+git branch -d feautre-button
+but this is happened locally so you need to push it again to main 
+
+now this branch is deleted locally but still present on online repository 
+to delete from their as well use 
+git push origin --delete feature-button 
+
+
+
+
+
+
+
