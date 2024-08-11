@@ -78,7 +78,7 @@ when we are working on multiple features and multiple development project what w
 
 we creating a new feature we create a new branch and then merge it with main branch 
 
-to select our main branch we use git branch -M main 
+to select our main branch we use git branch -M main also to rename our local branch to the name main we use this command IMPORTANT
 to know which branch we are currently working on use git branch command 
 git branch
 
