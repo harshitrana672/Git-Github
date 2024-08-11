@@ -24,6 +24,17 @@ now this branch is deleted locally but still present on online repository
 to delete from their as well use 
 git push origin --delete feature-button 
 
+So now we are creating a new branch withe name search and adding new page into it and  commit 2 changes but before merging the branch to the main branch we done another commit on the main branch and we want that change to reflect on our newly created branch so here the concept of git pulll comes into picture 
+
+so basically the branch you are on here is search can pull the change happend to main branch using this command 
+git pull origin main 
+then we can merge them remember when you're pulling your change make sure youre on search branch 
+then use git merge search but by switching to main again 
+
+Now here the concept is you are trying to make changes but before you pushing it to the remote repository someone already push something to it or another team member 
+in this case you need to pull those changes first that is present on your main branch 
+
+
 
 
 
