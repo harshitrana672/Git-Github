@@ -1,0 +1,37 @@
+To commit and add a tracked file simultaneously in one command use 
+git commit -a -m "Updateed Index"
+This command won't work if there is a untracked file present 
+
+if you want to create a branch and switch to that new branch simultaneously 
+use 
+git checkout -b heading 
+
+Command git branch -v gives us the detail about the branch and commit happend to them recently 
+
+git branch -r is used to know the detail of all remote branch 
+So MERGE conflict is basically lets take an exmple we have two branch one is main and other is heading so if in both branch one file is edited 
+and the same line is edited so at the time of merging them which one to keep 
+To resolve this issue you get a option in your editor (vscode) to accept which change and then complete merge 
+
+to know which branch merged currently use this command 
+git branch --merged 
+
+to know which branch are not currently merged 
+use this command 
+git branch --no-merged
+
+so now if you didn't merged a particular branch and you want to delte that branch doing this 
+git branch -d filter 
+didn't work it gives you warning that this is not merged to forcefully delete this branch use 
+git branch -D filter 
+
+git push -u origin main this -u here is to create a upstream so you can directly pull those change that maded online 
+ALWAYS PULL BEFORE YOU PUSH 
+
+
+
+
+
+
+
+
