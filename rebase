@@ -1,0 +1,46 @@
+both git merge and git rebase are used to integate changes 
+In merge we done changes on separte branch then merged it with main branch so other branch doesn't contain history about our main branch '
+but in rebase we attached the commit happend in our other branch and attached it to next position where we want it to be in the main branch 
+this way both the branch holds the info of each other 
+But when doing rebasing the commit id for our other branch will also changed when attached to the main branch this same the change reflectig is same 
+but the commit is different 
+also using rebase will create mess in our timestamp also as the commit is not now in sequential form anymore 
+
+So what we have done here is that we jumped to our product branch first and try to rebase it with our main branch if there is not any conflict
+then we go to main and rebase it with product branch and we can check all the feautre of our product branch merged with our main 
+git checkout feature
+git rebase main 
+git checkout main 
+git rebase feature 
+
+So now if the conflict arise like both our main branch and feature branch contain the change in same line which is in index.htmk page to resovle 
+the issue you need to the same thing which we have done in merge conficts  manually accept the change after the issue is resolved we need to commit
+one more time and then use this command 
+git rebase --continue 
+
+git checkout product 
+git push origin feature
+git checkout main
+git push origin main 
+
+Difference between merge and rebase 
+in merge history is maintained both main and other branch contain their own history with time sequence whereas rebase doesn't have this after
+rebase the history for main and feature branch is exactly same '
+
+when working with merge we go to know where the conflict present even after merging them but this is lost in rebase once the issue is resolved 
+
+order of change is not preserved meaning the commit for featue branch is always on top of our main branch 
+
+Where we can use rebase in personal thing not on open source project (example feature , feature bug branch then merging them to main)
+
+GIt IGnore so ther are some files which contain password or some junk file which we don't want to push online then we add those file in gitignore'
+file and it start with '.gitignore'
+
+
+
+
+
+
+
+
+
