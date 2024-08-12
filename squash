@@ -1,0 +1,9 @@
+git squash its a technique helps us to combine mutliple commit 
+so basically git squash is when we did commit multiple changes but we want to combine them in a single commit so it can't be visible online 
+we combine them using git squash so to do that we need to follow some steps as follows:
+first use this command 
+git rebase -i HEAD~4 (4 is no of commit you want to combine this command open up a interactive unix shell so it showing some option if we choose
+pick that means commit and if we choose squash that will be merged so in front of written commit insert squash for them you want to merge
+
+then press ESC and enter :X and then enter 
+then it is asked for recent commit message then press ESC then enter then :x then enter 
