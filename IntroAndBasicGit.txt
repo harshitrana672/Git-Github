@@ -51,7 +51,7 @@ git --version
 d:
 cd splitmate 
 code .
-git config --global user.email "harshitrana672@gmail.com
+git config --global user.email "harshitrana672@gmail.com"
 git config --global user.name "Harshit Rana"
 git config --list
 git init 
