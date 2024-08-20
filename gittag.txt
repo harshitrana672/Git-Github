@@ -1,0 +1,27 @@
+git tag 
+this helps to mark a point in git history or reposiotry history that this point is dedicated for this particular tag 
+so after any commit we can add tag just by using 
+git tag v0.1  (v0.1 is the tag name )
+then after every commit it can't be displayed on your remote repository untill you push it to that  by using 
+git push v0.1 
+you can check all the tags using git tag --list
+Also after creating you can release all things just by goint to create new release and then choosing tag version and publishing 
+
+now here we are going to create a new tag v0.2
+
+git checkout 
+if i create multiple tag and release and i want to checkout the previous version of my application I need to visit to that particular commit of that tag 
+so git checkout not only works with branches but you can switch to tags as well by just providing the tag name ex, 
+git checkout v0.1
+
+not only that you can visit to any particular commit using git checkout commitID if any commit happen after that v0.1 it will create a new timeline and chance 
+are it will destroy the whole timeline 
+
+if i want to delete any tag 
+git tag -d tagname (v0.3) if we want to delete it locally if you wan to delete it from remote also you need to follow similar previous commmand 
+
+to delete the already present origin and creating your own origin you need to do 
+git remote rm origin 
+to clone any project use git clone linkoftheproject
+add your own repository to this current project using git remote add origin linkofyourrepository 
+then to upstream git push -u origin main 
