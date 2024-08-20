@@ -1,0 +1,5 @@
+Fork : making exact same repository on my account also from some other project 
+so to open source contribution first fork project and then clone it locally do not touch the main branch as all the changes other person doing needs to reflect on it 
+then create a different branch so we can do our changes 
+commit change to that branch and then if you want to merge your change to the company file from where you fork the branch and done all these thing you need to create
+a pull request
