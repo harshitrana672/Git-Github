@@ -7,3 +7,29 @@ pick that means commit and if we choose squash that will be merged so in front o
 
 then press ESC and enter :X and then enter 
 then it is asked for recent commit message then press ESC then enter then :x then enter 
+
+git revert 
+With the term revert or reverse we are going to reverse certain things 
+the aim is to revert the change for a particular commit 
+So to revert the commit change we can do that using commit id or by the complete hash id and also by using head with the position also ex
+head 0 head 1 and so on ..
+So now using this command 
+git revert HEAD~2 it will revert the change happend in Head 2 position from the head 0 commit 
+
+git reset 
+so it basically you accidently or by knowlingly pushes file to commit stage and you don't want the commit but want the change precisely said
+the change should present in stagging area then you can use git reset 
+command
+git reset --soft HEAD~ for head 0 commit 
+or git reset --soft commitiD 
+
+git reset is for moving the change from stagging area to working directory 
+by default the command is 
+git reset 
+
+with hard reset the changes is also gone along with commit 
+to use this we need to use 
+git reset --hard HEAD~
+
+by doing hard reset we simply remove all the further commit fromt that particular commit 
+
